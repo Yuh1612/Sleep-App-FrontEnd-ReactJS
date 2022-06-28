@@ -8,7 +8,7 @@ function Common({ users }) {
       "/" +
       m.getUTCFullYear() +
       " " +
-      m.getHours() +
+      (m.getHours() + 7) +
       ":" +
       m.getUTCMinutes() +
       ":" +

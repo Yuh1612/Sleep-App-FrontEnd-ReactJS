@@ -2,13 +2,13 @@ function User({ user }) {
   const parseDateTime = (DateTime) => {
     var m = new Date(DateTime);
     var dateString =
-      m.getUTCDate() +
+      (m.getUTCDate() + 1) +
       "/" +
       (m.getUTCMonth() + 1) +
       "/" +
       m.getUTCFullYear() +
       " " +
-      m.getHours() +
+      (m.getHours() + 7) +
       ":" +
       m.getUTCMinutes() +
       ":" +
