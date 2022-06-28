@@ -2,7 +2,7 @@ function Common({ users }) {
   const parseDateTime = (DateTime) => {
     var m = new Date(DateTime);
     var dateString =
-      m.getUTCDate() +
+      (m.getUTCDate() + 1) +
       "/" +
       (m.getUTCMonth() + 1) +
       "/" +
